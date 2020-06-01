@@ -1,0 +1,323 @@
+
+/* font-family: 'Overpass', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,600;1,200;1,900&display=swap" rel="stylesheet');
+
+/* font-family: 'Alegreya Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,500;1,100&display=swap" rel="stylesheet');
+
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet');
+/*-----------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*-----------------------*/
+:root{
+  --color-violetblue: rgba(104, 134, 197, 1);
+  --color-lightpink: #fee9f8;
+}
+/*-----------------------*/
+/*-----------------------*/
+html {
+  font-size: 62.5%;
+  margin: 0;
+}
+/*-----------------------*/
+/*-----------------------*/
+body{
+  margin: 0;
+  background-color:  #fdfcfc;
+  font-size: 1.6rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 200;
+
+}
+#header{
+  position: sticky; /* header sticks to top */
+  top: 0; /* header sticks to top */
+  /*change atode*/
+  z-index: 2;
+}
+main{
+  z-index: 1;
+  margin-top: 3rem; /* space between main and header */
+}
+
+/*-----------------------*/
+.centerAUTOWid{
+  display:block;
+  margin: 0 auto;
+  height: 500px;
+  width: auto;
+
+}
+
+#header-img{
+  background-image: url(http://drive.google.com/uc?export=view&id=1Z9_ErPEcg8bXurl-tsimZhSVZqtjULY6);
+  width: 100%;
+  height: 10rem;
+  margin: 5rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.centerFIXWid{
+  display: block;
+  margin: 0 auto;
+  width: 50rem;
+  text-align: center;
+}
+
+.centerFIXWid p{
+  background:  var(--color-lightpink);
+}
+
+.decorationLine{
+  margin: 5rem auto;
+  width: 50rem;
+  height: 0.1rem;
+  background: lightgray;
+}
+
+.displayGrid{
+  display: grid;
+  grid-template-columns: 25.5rem 25.5rem;
+  grid-column-gap: 5rem;
+  justify-content: center;
+}
+
+.displayGrid p{
+  font-size: 1.125rem;
+  text-align: justify;
+}
+
+/*----------------------- flexContainer */
+#nav-bar{ /* main container, flex, elements will split around */
+  display: flex;
+  height: 2.5rem;
+  padding-top: 0.4rem;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  background-color: var(--color-lightpink);
+  paddin-top: 0.8rem;
+}
+/*----------------------- Style to Links */
+#nav-bar a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--color-violetblue);
+}
+a:hover{
+  color:white;
+}
+/*----------------------- FlexChildren */
+.nav-link{
+  margin: 0 1.2rem;
+  white-space: nowrap;
+}
+/*-----------------------*/
+.displayGridColors{
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 8rem 8rem 8rem 8rem 8rem;
+  grid-template-rows: 3rem;
+  grid-gap: 3rem;
+  justify-content: center;
+}
+
+.gridColor1{
+  background-color: #f8eff5;
+}
+
+.gridColor2{
+  background-color: #f0ddea;
+}
+
+.gridColor3{
+  background-color: #e9cbdf;
+}
+
+.mainflexNav{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem 0;
+
+  background-image: linear-gradient( rgba(231,56,39,0) 60%, rgba(236,62,42,0) 44%, rgba(251,234,234, 0.8) 0%) ;}
+
+#poster1{
+  background-image: url(http://drive.google.com/uc?export=view&id=1J9NdFz86EfB2B2nZLccnMy30od-ZIuvN);
+border-bottom: 0.3rem solid white;
+
+}
+
+#poster2{
+  background-image: url(http://drive.google.com/uc?export=view&id=1zDrIW95U6V2fv3BKaT7NmYiYk6eVPQQI);
+border-bottom: 0.3rem solid white;
+}
+
+#poster3{
+  background-image: url(http://drive.google.com/uc?export=view&id=1paiAc-8JhOfrQ5NA4hvJtXukSNRL2oUY);
+border-bottom: 0.3rem solid white;
+}
+
+.posterSize{
+margin: 2rem 0;
+height: 40rem;
+width: 45rem;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+#video{
+  margin-bottom: 5rem;
+}
+
+.displayBlock{
+  display: block;
+  margin: 0 auto;
+}
+#id-form{
+
+  background:  var(--color-lightpink);
+  text-align: center;
+  height: 22rem;
+  color: gray;
+  padding: 5rem 0;
+  font-size: 2.5rem;
+}
+label, input, button{
+    font-family: Vidaloka;
+}
+label{
+display: block;
+}
+
+input{
+  border: solid white;
+  width: 25rem;
+  margin: 3rem 0;
+  padding: 0.62rem;
+}
+
+button{
+  background: lightpink;
+  font-weight: 500;
+  border: none;
+}
+
+ input:hover{
+  border: solid pink;
+}
+
+#main-image{
+  background-image: url(http://drive.google.com/uc?export=view&id=1hnZ8FFLJgpLOXgdxBQ_9Nb_NuC0LTkS2);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button{
+  height: 3rem;
+  width: 8rem;
+}
+/* animation */
+
+.slider-wrap {
+  width: 600px;
+  height: 500px;
+
+  display: inherit;
+  margin: inherit;
+
+
+}
+
+.single-slide {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  background-size: cover;
+  animation: slider-animation;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border-bottom: 0.1rem solid white;
+   border-top: 0.1rem solid white;
+}
+
+#slide-1 {
+  animation-delay: 5s;
+  background-image: url(http://drive.google.com/uc?export=view&id=11jWcsfs80gvGDucDXOVQDBsxnKmw0oAG);
+}
+
+#slide-2 {
+  background-image: url(http://drive.google.com/uc?export=view&id=1RJcBsjM9HINRD7HtYHpybBYN_je0tD5c);
+  font-size: 7rem;
+  animation-delay: 15s;
+}
+
+@keyframes slider-animation {
+  0% {     opacity: 0;  }
+  6% {     opacity: 1;  }
+  24% {    opacity: 1;  }
+  30% {    opacity: 0;  }
+  100% {   opacity: 0;  }
+}
+
+@media screen and (max-width: 570px) {
+  .slider-wrap{
+    width:300px;
+    height: 250px;
+  }
+  .centerAUTOWid{
+    height: 250px;
+  }
+
+  .displayGrid {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 5rem;
+}
+  .displayGrid p{
+   margin: 0.5rem 5rem;
+}
+
+.decorationLine{
+  width: 25rem;
+
+}
+.centerFIXWid{
+  width: 25rem;
+}
+
+.displayGridColors{
+  grid-template-columns: 3rem 3rem 3rem 3rem 3rem;
+  grid-template-rows: 3rem;
+
+}
+
+
+}
+@media screen and (max-width: 1380px) {
+  .mainflexNav{
+    justify-content:space-between;
+    flex-direction: column;
+    padding: 1.5rem 5rem;
+    flex-wrap: wrap;
+    background: rgba(251,234,234, 0.3);
+}
+  .posterSize{
+  width: 100%;
+}
+  }
+/*
+<a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by freepik - www.freepik.com</a>
+<a href="https://www.freepik.com/free-photos-vectors/mockup">Mockup psd created by freepik - www.freepik.com</a>
+*/
