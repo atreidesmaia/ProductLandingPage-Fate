@@ -28,7 +28,7 @@ html {
 body{
   margin: 0;
   background-color:  #fdfcfc;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   font-family: 'Overpass', sans-serif;
   font-weight: 200;
 
@@ -68,6 +68,7 @@ main{
   margin: 0 auto;
   width: 50rem;
   text-align: center;
+
 }
 
 .centerFIXWid p{
@@ -96,8 +97,8 @@ main{
 /*----------------------- flexContainer */
 #nav-bar{ /* main container, flex, elements will split around */
   display: flex;
-  height: 2.5rem;
-  padding-top: 0.4rem;
+  height: 2.7rem;
+  font-style: oblique;
   flex-wrap: nowrap;
   justify-content: flex-end;
   background-color: var(--color-lightpink);
@@ -106,7 +107,7 @@ main{
 /*----------------------- Style to Links */
 #nav-bar a{
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: var(--color-violetblue);
 }
 a:hover{
